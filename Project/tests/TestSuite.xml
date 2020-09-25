@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="Test suite ECommerceWebsite" annotations="JDK" parallel="tests">
+
+    <test name="HomePageNavigationMenu">
+        <classes>
+            <class name="tests.HomePageNavMenuTestDestination"/>
+        </classes>
+    </test>
+    <test name="SearchBarSearchResult">
+        <classes>
+            <class name="tests.TestSearchBarCheckingSearchResults"/>
+        </classes>
+    </test>
+    <test name="TestingCart">
+        <classes>
+            <class name="tests.TestingCart"/>
+        </classes>
+    </test>
+    <test name="SocialMedia">
+        <classes>
+            <class name="tests.CheckSocialMediaLinks"/>
+        </classes>
+    </test>
+    <test name="OneMessage">
+        <classes>
+            <class name="tests.TestOneMesage"/>
+        </classes>
+    </test>
+    <test name="Send30Messages">
+        <classes>
+            <class name="tests.TestMessages"/>
+        </classes>
+    </test>
+
+</suite>
